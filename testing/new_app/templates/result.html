@@ -1,0 +1,21 @@
+{% load static %}
+
+your response has been recorded <br><br>
+
+
+
+{% if res==0 %}
+    <img src="{% static 'images/covid1.jpg' %}" width="500" height="500">
+
+{% elif res==1 %}
+    <img src="{% static 'images/nml1.jpg' %}" width="500" height="500">
+
+
+{% elif res==2 %}
+    <img src="{% static 'images/pnemonia.jpg' %}" width="500" height="500">
+
+{% endif %}
+
+<br><br>
+
+<a href="{% url 'form' %}">click here</a> to go back ! 
